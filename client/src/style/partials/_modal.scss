@@ -1,0 +1,57 @@
+.modal {
+  padding: 24px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #007aff;
+  width: 60vw;
+  border-radius: 4px;
+  line-height: 2;
+  border: solid black .5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.55rem;
+  z-index: 2;
+  font-family: TitilliumWeb-SemiBold;
+  
+  &:after{
+    position: absolute;
+    left: -50%;
+    content: "";
+    background-color:#c9d6df;
+    position: absolute;
+    width: 200%;
+    height: 500vw;
+    opacity:.8;
+    z-index: -1;
+    @include tab-s{
+      height: 200vw;
+    }
+
+  }
+  &__link {
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline dotted !important;
+  }
+  &__pic {
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    max-width:550px;
+    object-fit: contain;
+  }
+&__button{
+  max-width: 300px;
+  width: 20vw;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+}
+.modal p {
+  line-height: 32px;
+  margin: 32px 0;
+}

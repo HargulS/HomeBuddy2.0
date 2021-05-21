@@ -1,0 +1,45 @@
+.menu {
+  background: #ffffff;
+  border-radius: 8px;
+  top: 60px;
+  right: 0;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
+
+.menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(5px) translateX(0px);
+}
+
+.menu ul {
+  list-style: none;
+  position: absolute;
+  background-color:$nav;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 55px;
+}
+
+.menu ul li {
+  text-align: center;
+  border-bottom: 1px solid #dddddd;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333333;
+}
+.menu-container__resourcesList{
+  width: 15vh !important;
+}

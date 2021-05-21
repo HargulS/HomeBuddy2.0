@@ -1,0 +1,109 @@
+.footer{
+  width: 100%;
+  background-color: #f0f5f9;
+padding-bottom:24px;
+
+&__siteHeadingWrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+height: 5vh;
+  padding-left:24px;
+  border-bottom: solid 1px #52616b;
+  background-color: #c9d6df;
+  @include tab-s {
+    padding-left: 24px;
+  }
+  @include desktop-m{
+    padding-left: 48px;
+  }
+}
+&__siteLogo{
+  width: 4.5rem;
+  height: 4.5rem;
+  
+}
+  &__heading{
+    font-size: 2.5rem;
+    padding-left: 5px;
+  
+  }
+  &__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 2500px;
+    flex-wrap: wrap;
+    padding-left: 24px;
+    @include ph-xl{
+      padding-left: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 0 auto;
+    }
+    @include desktop-m{
+      padding-left: 48px;
+      padding-right: 48px;
+    }
+  }
+  &__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 24px;
+  }
+
+  &__listItem{
+    padding-top:12px;
+
+  }
+
+&__listItemHeading{
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-bottom: 12px;
+  @include tab-s{
+    font-size:2rem;
+    padding-bottom: 20px;
+    padding-top: 10px;
+
+  }
+  @include desktop-m{
+   
+    padding-right: 48px;
+  }
+}
+&__listItemText{
+  padding-bottom: 5px;
+  font-size: 1.35rem;
+  line-height: 1.5;
+  font-family: TitilliumWeb-SemiBold;
+  @include ph-xl{
+    padding-bottom: 0;
+  }
+  @include desktop-s{
+    font-size: 1.55rem;
+  }
+
+  
+}
+&__listItemText-Adrs{
+  width: 200px;
+  
+}
+&__listItemIcons{
+  color: #69b0fc;
+  font-size: 2rem;
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   width: 150px;
+  @include tab-s{
+    font-size: 3rem;
+    width: 200px;
+  }
+
+}
+}

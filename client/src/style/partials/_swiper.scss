@@ -1,0 +1,122 @@
+.swiperHeading {
+  @include tab-s{
+    height:20vh;
+  }
+  &__heading {
+    color: #dee6eb;
+    position: relative;
+    margin: 0 auto;
+    font-size: 2.7rem;
+    @include tab-s {
+      font-size: 5.5rem;
+     
+    }
+  }
+}
+.swiper-container {
+  width: 100%;
+  @include tab-s {
+   width: 50vw;
+   position: relative;
+   top: -22%;
+  }
+  @include desktop-m{
+    margin-left: 0 !important;
+    margin-right:0 !important;
+  }
+}
+.swiper-wrapper {
+  width: 100%;
+  height: 300px !important;
+  @include desktop-s{
+ 
+  }
+}
+.swiper-slide {
+  @include tab-s {
+ 
+  }
+}
+
+  
+.slideHeading {
+  color: #dee6eb;
+  font-size: 1.75rem;
+  @include tab-s {
+    font-size: 2.75rem;
+   
+    
+  }
+}
+.swiperButton {
+  height: 3rem;
+  border-radius: 6px;
+  background-color: #c9d6df;
+  color: #1e2022;
+  position:absolute;
+  transform: translate(-50%);
+  top: 36%;
+  @include ph-xs{
+    font-size: 1rem;
+  }
+  @include tab-s {
+    position: abs;
+    font-size: 1.5rem;
+    width: 13rem;
+    top: 62%;
+    height: 3.5rem;
+  }
+  &:hover {
+    background-color: #52616b;
+    color: white;
+  }
+}
+// .swiper-button-next,
+// .swipe-button-prev{
+ 
+ 
+// }
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 3rem !important;
+  color: #dee6eb !important;
+  opacity: 1 !important;
+  position: relative;
+  top: -60%;
+  @include tab-s{
+    top: 120%;
+    font-size: 5.5rem !important;
+    
+  }
+
+
+}
+.swiper-button-next::after{
+  @include desktop-xl{
+    position: absolute;
+   left:-00%;
+  }
+  @include desktop-xxl{
+    left:-240px;
+    margin-right:0px;
+   }
+}
+.swiper-button-prev::after{
+  @include desktop-xl{
+    position: absolute;
+  }
+  @include desktop-xxl{
+   right:-240px;
+  
+  }
+}
+.swiper-pagination {
+  bottom: 100px !important;
+  @include tab-s{
+    position: absolute;
+top:94%;
+
+
+
+  }
+}

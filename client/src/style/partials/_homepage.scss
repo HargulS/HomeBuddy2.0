@@ -1,0 +1,173 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 2948px;
+  @include tab-s{
+    height: 3300px;
+  }
+  @include tab-m {
+    height: 1688px;
+  }
+  &__heroBanner {
+    background: linear-gradient(rgba(201, 214, 223, 0), rgba(82, 97, 107, 0.95)),
+      url("../assets/images/bannerImg6.png");
+    background-attachment: fixed;
+    background-position: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 40vh;
+    text-align: center;
+    position: relative;
+
+    @include tab-s {
+      height: 80vh;
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+  
+     
+    }
+  
+  }
+
+  &__swiper {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    margin-bottom: -70px;
+    @include tab-s {
+      width: 765px;
+      height: 60vh;
+      justify-content: space-around;
+    }
+    @include desktop-lg{
+      margin-bottom:0 auto;
+    }
+  
+  }
+  &__particles {
+    position: absolute;
+    width: 100vw;
+    top: 0%;
+    height: 100%;
+  }
+
+  &__cardsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    top: -1.8%;
+    border-radius: 10px;
+    border: solid 0.5px #52616b;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+      5px 5px 15px 5px rgba(30, 32, 34, 0.5);
+    box-shadow: 0px 10px 13px -7px #000000,
+      5px 5px 15px 5px rgba(30, 32, 34, 0.5);
+    background-color: #f0f5f9;
+   margin-bottom: 48px;
+    @include tab-s{
+      top: -1.6%;
+    }
+    @include tab-m {
+      top: -3.1%;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 1080px;
+    }
+    
+  }
+
+  &__cardsBar {
+    height: 50px;
+    width: 100%;
+    background-color: #c9d6df;
+    border-bottom: 0.5px solid #52616b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+    @include tab-m{
+      // border-top-left-radius:0px;
+    }
+  }
+
+  &__cardsAll {
+    background-image: url("../assets/images/wave5.png");
+    background-position: center;
+    background-size: 100% 35%;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+   
+  
+    @include tab-m {
+      height: 2500px;
+      flex-direction: row;
+      justify-content: space-around;
+      height: inherit;
+    }
+  }
+  &__cards {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #292c2c;
+    
+    @include tab-s {
+      height: 100%;
+    }
+  }
+  &__cardItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    @include tab-s {
+      // height: 20rem;
+      // font-size: 2rem;
+    }
+  }
+
+  &__cardItemsTitle {
+    height: auto;
+    padding: 5px;
+    font-size: 2.5vw;
+    background-color: #cfcfcf;
+    border-radius: 10px;
+    @include tab-s {
+      font-size: 1.65rem;
+      // width: 100px;
+    }
+  }
+
+  &__cardItemsBody {
+    font-size: 2.5vw;
+    height: auto;
+    padding: 5px;
+    border-radius: 10px;
+    @include tab-s {
+      font-size: 1.5rem;
+      background-color: #cfcfcf;
+    }
+  }
+  &__summary{
+    position: absolute;
+    top: 0;
+  }
+}
+#tsparticles {
+  height: inherit;
+}

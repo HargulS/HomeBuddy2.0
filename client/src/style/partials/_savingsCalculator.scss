@@ -1,0 +1,125 @@
+.savings {
+  width: 100%;
+  position: relative;
+margin-top: 45px;
+  @include tab-m {
+    margin: 0;
+    width: 30vw;
+    max-width: 500px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+    height: 615px;
+    top: 33px;
+    padding-top: 0px;
+    padding-bottom: 4%;
+    left: 5%;
+    
+    @include tab-m {
+      height: 690.8px;
+      position: absolute;
+      left: 0;
+      padding: 0;
+      top: 63px;
+      width: 100%;
+    }
+    @include desktop-s{
+      top: 60px;
+    }
+  }
+  &__formHeading {
+    padding-bottom: 10px;
+    font-size: 1.85rem;
+    padding-top: 24px;
+    @include tab-m {
+      top: -5%;
+    }
+    @include desktop-m {
+      top: -0.2%;
+    }
+  }
+  &__formLabel{
+    position: relative;
+    z-index: 1;
+    width:inherit;
+    margin-bottom: 48px;  
+    background-color: transparent;
+  }
+   
+  &__formLabelDiv{
+    z-index: 2;
+    background-color: #f0f5f9;
+    height: 20px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    margin-left:10px;
+ 
+ 
+  }
+  .savings__form input{
+   position: absolute;
+      z-index: -1;
+      width: 100%;
+    top:9px;
+  }
+  
+
+  &__cardImgWrapper{
+    display: flex;
+    justify-content: center;
+    
+  }
+  &__cardImg{
+    //  width: 70%;
+    width: 300px;
+    @include ph-l{
+      width: 360px;
+    }
+      
+      @include tab-m{
+        width: 300px;
+    
+      }
+      @include desktop-s{
+        width: 360px;
+      
+      }
+    }
+   &__formButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height:85px;
+    margin-top: 20px;
+    @include tab-m{
+      flex-direction: row;
+      position: relative;
+      top:12%;
+    }
+
+  }
+  &__button {
+    width: 250px;
+  }
+  &__result--item {
+    font-size: 1.5rem;
+    color: #007aff;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.5;
+    @include tab-m {
+      position: relative;
+      top: 31.8%;
+      text-align: left;
+    }
+  
+  }
+}
