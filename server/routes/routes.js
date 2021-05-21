@@ -63,8 +63,6 @@ router.post("/", (req, res) => {
 
 function update(id,data){
   const dataArray = listUserData();
-
-
   const filteredObject = dataArray.filter((item)=>item.id===id);
   filteredObject[0].savings=data.savings
   filteredObject[0].contributions=data.contributions

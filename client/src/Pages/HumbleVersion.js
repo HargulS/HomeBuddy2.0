@@ -4,7 +4,7 @@ import calculator from "../assets/images/calculator2.svg";
 
 const API_URL =
   process.env.NODE_ENV === "production"
-    ? "https://homebuddy-app.herokuapp.com"
+    ? "https://homebuddyapp.herokuapp.com"
     : "http://localhost:5000";
 
 export default function HumbleVersion(props) {

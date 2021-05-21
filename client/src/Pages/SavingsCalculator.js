@@ -2,7 +2,7 @@ import Axios from 'axios';
 import React, { useState } from 'react';
 import piggyBank from "../assets/images/piggyBank2.svg"
 const API_URL = process.env.NODE_ENV === "production"
-  ? 'https://homebuddy-app.herokuapp.com'
+  ? 'https://homebuddyapp.herokuapp.com'
   : 'http://localhost:5000';
 
 
