@@ -5,7 +5,7 @@ export default function Footer() {
     <>
       <footer className="footer">
         <div className="footer__siteHeadingWrapper">
-          <img className="footer__siteLogo" src={HouseLogo} />
+          <img alt="house logo"className="footer__siteLogo" src={HouseLogo} />
           <h2 className="footer__heading">Home Buddy</h2>
         </div>
         <section className="footer__container">

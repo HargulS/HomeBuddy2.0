@@ -9,12 +9,10 @@ import NavBar from "./Pages/NavBar";
 import Footer from "./Pages/Footer";
 import SummaryPage from "./Pages/SummaryPage";
 import { library } from '@fortawesome/fontawesome-svg-core'
-
 import { fab,faTwitterSquare,faHouzz,faFacebookSquare,faInstagramSquare,faLinkedin,faSourcetree} from '@fortawesome/free-brands-svg-icons'
-
 import { faHome,faCommentsDollar,faBars,faSignInAlt} from '@fortawesome/free-solid-svg-icons'
 
-import ParticleBackground from "./Pages/Particles/ParticlesBackground"
+
 library.add(fab,faHome,faSignInAlt,faBars,faSourcetree,faHouzz,faCommentsDollar,faTwitterSquare,faFacebookSquare,faInstagramSquare,faLinkedin)
 export default function App() {
  const [id, setId] =useState(null);

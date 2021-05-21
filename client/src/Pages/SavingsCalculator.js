@@ -1,6 +1,5 @@
 import Axios from 'axios';
 import React, { useState } from 'react';
-import {Link} from 'react-router-dom';
 import piggyBank from "../assets/images/piggyBank2.svg"
 const API_URL = process.env.NODE_ENV === "production"
   ? 'https://homebuddy-app.herokuapp.com'
@@ -66,7 +65,7 @@ export default function SavingsCalculator(props) {
             futureValue:futureValue,
         }
         console.log('edit data',editData)
-        Axios.put(`${API_URL}/api/start/${params.id}`,editData)
+        Axios.put(`${API_URL}/api/start/${props.id}`,editData)
         .then((response)=>{alert("Saved! Please click NEXT to proceed")
             setGetData(response.editData)})
         .catch((error)=>{console.log(error)})
@@ -81,7 +80,7 @@ export default function SavingsCalculator(props) {
                 2.Start Saving</h2>
             <form className="savings__form" onSubmit={(e) => e.preventDefault(e)}>
             <div className="savings__cardImgWrapper">
-              <img className="savings__cardImg" src={piggyBank}/>
+              <img alt="piggy bank illustration" className="savings__cardImg" src={piggyBank}/>
             </div>
        <label className="savings__formLabel">
           <div className="savings__formLabelDiv">

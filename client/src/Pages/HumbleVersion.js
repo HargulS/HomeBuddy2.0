@@ -1,11 +1,5 @@
 import React, { useState } from "react";
 import Axios from "axios";
-import Modal from "./Modals/ModalNOA";
-import { Link } from "react-router-dom";
-import ArrowBack from "../assets/icons/ArrowBack.svg";
-import ArrowForward from "../assets/icons/ArrowForward.svg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import calculator from "../assets/images/calculator2.svg";
 
 const API_URL =
@@ -23,9 +17,9 @@ export default function HumbleVersion(props) {
   const [heatingCost, setHeatingCost] = useState(null);
   const [strata, setStrata] = useState(null);
   const [result, setResult] = useState(null);
-  const [TDS, setTDS] = useState(null);
+
   const [payment, setPayment] = useState(null);
-  const [isOpen, setIsOpen] = useState(null);
+
 
   const totalExpenses = (liabilities + propertyTax + heatingCost + strata) * 12;
   console.log("expenses", totalExpenses);
@@ -69,13 +63,7 @@ export default function HumbleVersion(props) {
   const handleStrata = (e) => {
     setStrata(Number(e.target.value));
   };
-  const CalculateTDS = (e) => {
-    const mtgPaymentMonthly = (0.44 * income - totalExpenses) / 12;
-    const totalAnnualExpenses =
-      (liabilities + propertyTax + heatingCost + strata + mtgPaymentMonthly) *
-      12;
-    setTDS((totalAnnualExpenses / income) * 100);
-  };
+
   const mortgageAmt = (e) => {
     const totalExpenses =
       (liabilities + propertyTax + heatingCost + strata) * 12;
@@ -97,7 +85,7 @@ export default function HumbleVersion(props) {
 
   const totalAnnualExpenses = mtgPaymentAnnual + totalExpenses;
   console.log("total annual expenses", totalAnnualExpenses);
-  const ratio = (totalAnnualExpenses / income) * 100;
+
 
   const captureData = {
     name: name,
@@ -132,7 +120,7 @@ export default function HumbleVersion(props) {
         onSubmit={(e) => e.preventDefault(e)}
       >
         <div className="mtgCalculator__cardImgWrapper">
-          <img className="mtgCalculator__cardImg" src={calculator} />
+          <img alt="man pointing at calculator illustration" className="mtgCalculator__cardImg" src={calculator} />
         </div>
 
         <label className="mtgCalculator__formLabel">
@@ -187,7 +175,6 @@ export default function HumbleVersion(props) {
           <input
             type="number"
             name="expenses"
-            placeholder="Monthly Liabilities"
             placeholder="Loan,Credit Cards,etc."
             onChange={handleLiabilities}
           ></input>
@@ -229,7 +216,7 @@ export default function HumbleVersion(props) {
             onClick={() => {
               mortgagePayment();
               mortgageAmt();
-              CalculateTDS();
+             
             }}
           >
             Calculate

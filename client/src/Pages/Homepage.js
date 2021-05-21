@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-import calculator from "../assets/images/calculator.svg"
 import ParticleBackground from "./Particles/ParticlesBackground"
 import HumbleVersion from "./HumbleVersion"
 import SavingsCalculator from "./SavingsCalculator"

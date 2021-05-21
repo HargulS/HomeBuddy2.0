@@ -10,7 +10,7 @@ export default function NavBar() {
     <nav>
       <section className="navbar">
         <Link className="navbar__siteTitleLink"to="/homepage">
-          <img className="navbar__siteLogo"src={HouseLogo}/>
+          <img alt="house logo" className="navbar__siteLogo"src={HouseLogo}/>
           <h1 className="navbar__siteTitle">HomeBuddy </h1>
     </Link>
 

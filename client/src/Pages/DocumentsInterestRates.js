@@ -6,7 +6,6 @@ import ModalArticlesIncorporation from "./Modals/ModalArticlesIncorporation";
 import ModalCashFlow from "./Modals/ModalCashFlow";
 import ModalCRARegNumber from "./Modals/ModalCRARegNumber";
 import doneChecking from "../assets/images/doneChecking2.svg"
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 
@@ -59,7 +58,7 @@ export default function DocumentsInterestRates() {
    
         <form className="docsRates__form">
         <div className="docsRates__cardImgWrapper">
-              <img className="docsRates__cardImg" src={doneChecking}/>
+              <img alt="calculator illustration" className="docsRates__cardImg" src={doneChecking}/>
             </div>
             <div className="docsRates__formHeading2">
         <h2 className="docsRates__formHeading-text">Choose A Category:</h2>
