@@ -41,9 +41,10 @@
       height: 430px;
       left: 0;
       padding-top: 44px;
+      top: 11%;
     }
     @include desktop-s {
-      top: 2%;
+      top: 8%;
     }
   }
   &__cardImgWrapper {
@@ -65,7 +66,7 @@
     @include tab-m {
       position: relative;
       top: 20px;
-      width: 300px;
+      width: 360px;
       max-width: 500px;
       top: -30px;
     }
@@ -73,7 +74,7 @@
       width: 360px;
       max-width: 500px;
       position: relative;
-      top: -30px;
+      // top: -30px;
     }
   }
   &__formHeading {
@@ -186,7 +187,7 @@
     justify-content: center;
     @include tab-m{
       position: absolute;
-      top: 164.7%;
+      top: 166.8%;
       left: 0%;
     }
     @include desktop-s{

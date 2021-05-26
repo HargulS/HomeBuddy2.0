@@ -191,8 +191,9 @@ const patchSummary =(e)=>{
         open={isOpenCRAReg}
         onClose={() => setIsOpenCRAReg(false)}
       ></ModalCRARegNumber>  
-      <h2 className="docsRates__formHeading">3. Documents For Mortgage Application</h2> 
+      
       <main className="docsRates">
+        <h2 className="docsRates__formHeading">3. Documents For Mortgage Application</h2> 
         <form className="docsRates__form">
         <div className="docsRates__cardImgWrapper">
               <img alt="calculator illustration" className="docsRates__cardImg" src={doneChecking}/>

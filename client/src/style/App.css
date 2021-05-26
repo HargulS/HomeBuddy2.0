@@ -1369,12 +1369,13 @@ input {
     height: 430px;
     left: 0;
     padding-top: 44px;
+    top: 11%;
   }
 }
 
 @media (min-width: 1150px) {
   .docsRates__form {
-    top: 2%;
+    top: 8%;
   }
 }
 
@@ -1407,7 +1408,7 @@ input {
   .docsRates__cardImg {
     position: relative;
     top: 20px;
-    width: 300px;
+    width: 360px;
     max-width: 500px;
     top: -30px;
   }
@@ -1418,7 +1419,6 @@ input {
     width: 360px;
     max-width: 500px;
     position: relative;
-    top: -30px;
   }
 }
 
@@ -1585,7 +1585,7 @@ input {
 @media (min-width: 950px) {
   .docsRates__btnWr {
     position: absolute;
-    top: 164.7%;
+    top: 166.8%;
     left: 0%;
   }
 }
