@@ -6,8 +6,10 @@
     color: #dee6eb;
     position: relative;
     margin: 0 auto;
-    font-size: 2.7rem;
+    font-size: 2.3rem;
+    margin-top: 12px;
     @include tab-s {
+      margin-top: 0;
       font-size: 5.5rem;
      
     }
@@ -41,8 +43,10 @@
   
 .slideHeading {
   color: #dee6eb;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+  margin-top: 24px;
   @include tab-s {
+    margin-top: 0px;
     font-size: 2.75rem;
    
     
@@ -111,8 +115,9 @@
   }
 }
 .swiper-pagination {
-  bottom: 100px !important;
+  bottom: 130px !important;
   @include tab-s{
+   
     position: absolute;
 top:94%;
 

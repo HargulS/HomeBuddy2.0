@@ -26,8 +26,6 @@ const particlesConfig=
       image: {
         src:
         "https://www.freepnglogos.com/uploads/dollar-sign-png/dollar-sign-clip-art-clkerm-vector-clip-art-online-11.png",
-        // "https://www.freepnglogos.com/uploads/dollar-sign-png/dollar-sign-index-content-uploads-10.png",
-        // "https://www.freepnglogos.com/uploads/money-png/sack-dollar-money-31.png",
         width: 100,
         height: 100,
         color: "#52616b"

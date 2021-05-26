@@ -1,26 +1,23 @@
 export default function SummaryItems(props) {
-    let { name, age, location, liabilities, mortgage, mortgageInstallment, savings, contributions, interest, years, futureValue } = props;
-
+    let { name, age, location, liabilities, mortgage, mortgageInstallment, savings, contributions, interest, years, futureValue, employment, documents } = props;
     return (
-        <main>
-            <section className="">
-                <ul className="">
-                    <li className="summaryList__items"><label>Name:</label>{name}</li>
-                    <li className="summaryList__items"><label>Age:</label>{age}</li>
-                    <li className="summaryList__items"> <label>Current Location:</label>{location} </li>
-                    <li className="summaryList__items"> <label>Total Monthly Liabilities:</label>{liabilities} </li>
-                    <li className="summaryList__items"><label>Savings Balance:</label> {savings} </li>
-                    <li className="summaryList__items"><label>Monthly Contributions:</label> {contributions} </li>
-                    <li className="summaryList__items"><label>Interest Rate:</label> {interest} </li>
-                    <li className="summaryList__items"> <label>Time:</label>{years} </li>
-                    <li className="summaryList__items"><label>Accumulated Savings:</label> {futureValue} </li>
-                    <li className="summaryList__items"><label>Maximum Mortgage:</label> {mortgage} </li>
-                    <li className="summaryList__items"> <label>Maximum Monthly Mortgage Installment:</label>{mortgageInstallment} </li>
-
+            <section className="summary__summaryItems">
+                <ul className="summary__list"> 
+                <h2 className="summary__heading">Session Summary</h2>
+                    <li className="summary__items"><h3 className="summary__iNm">Name:</h3>{name}</li>
+                    <li className="summary__items"><h3 className="summary__iNm">Age:</h3>{age}</li>
+                    <li className="summary__items"><h3 className="summary__iNm"> Current Location:</h3>{location} </li>
+                    <li className="summary__items"> <h3 className="summary__iNm">Total Monthly Liabilities:</h3>{liabilities} </li>
+                    <li className="summary__items"><h3 className="summary__iNm">Savings Balance: </h3>{savings} </li>
+                    <li className="summary__items"><h3 className="summary__iNm">Monthly Contributions:</h3> {contributions} </li>
+                    <li className="summary__items"><h3 className="summary__iNm">Interest Rate:</h3> {interest} </li>
+                    <li className="summary__items"> <h3 className="summary__iNm">Time:</h3>{years} </li>
+                    <li className="summary__items"><h3 className="summary__iNm">Accumulated Savings: </h3>{futureValue} </li>
+                    <li className="summary__items"><h3 className="summary__iNm">Maximum Mortgage:</h3> {mortgage} </li>
+                    <li className="summary__items"> <h3 className="summary__iNm">Maximum Monthly Mortgage Installment:</h3>{mortgageInstallment} </li>
+                    <li className="summary__items"><h3 className="summary__iNm">Employment Type:</h3> {employment} </li>
+                    <li className="summary__items"><h3 className="summary__iNm">Documents:</h3> {documents} </li>
                 </ul>
             </section>
-
-        </main>
     )
-
 }

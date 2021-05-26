@@ -1,4 +1,5 @@
 import Axios from 'axios';
+
 import React, { useState } from 'react';
 import piggyBank from "../assets/images/piggyBank2.svg"
 const API_URL = process.env.NODE_ENV === "production"
@@ -32,12 +33,12 @@ export default function SavingsCalculator(props) {
         setYears(Number(e.target.value))
     }
     const rn = (interest/100)/compounds
-    console.log("rn",rn)
+ 
   
 
     
     const nt = compounds*years
-    console.log("nt",nt)
+
     
     const interestOnPrincipal = savings*(Math.pow((1+rn),nt))
     
@@ -45,7 +46,7 @@ export default function SavingsCalculator(props) {
     const numerator = ((Math.pow((1+rn),(nt)))-1)/rn
     const numerator2 = numerator*(contributions*12)
     console.log("numerator2",numerator2)
- console.log("contributions",contributions)
+
 
     const rhs= (interestOnPrincipal+numerator2).toFixed(2)
    
@@ -54,7 +55,7 @@ export default function SavingsCalculator(props) {
     }
  
 
-
+ 
    
     const patchData =(e)=>{
             const editData = {
@@ -64,20 +65,24 @@ export default function SavingsCalculator(props) {
             years:years,
             futureValue:futureValue,
         }
-        console.log('edit data',editData)
+       
         Axios.put(`${API_URL}/api/start/${props.id}`,editData)
+      
         .then((response)=>{alert("Saved! Please click NEXT to proceed")
-            setGetData(response.editData)})
+
+            setGetData("Response",response.editData)})
+        
         .catch((error)=>{console.log(error)})
 
     }
-
-
+  
+   
     return (
                  
         <section className="savings">
             <h2 className="savings__formHeading">
                 2.Start Saving</h2>
+                <div className ="savings__formWr">
             <form className="savings__form" onSubmit={(e) => e.preventDefault(e)}>
             <div className="savings__cardImgWrapper">
               <img alt="piggy bank illustration" className="savings__cardImg" src={piggyBank}/>
@@ -124,6 +129,7 @@ export default function SavingsCalculator(props) {
         </div>
         
         </form>
+        </div>
         </section>
         
             

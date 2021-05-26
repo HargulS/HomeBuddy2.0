@@ -210,21 +210,7 @@ export default function HumbleVersion(props) {
           ></input>
         </label>
 
-        <div className="mtgCalculator__formButtons">
-          <button
-            className="mtgCalculator__button"
-            onClick={() => {
-              mortgagePayment();
-              mortgageAmt();
-             
-            }}
-          >
-            Calculate
-          </button>
-          <button className="mtgCalculator__button" onClick={postData}>
-            Save
-          </button>
-        </div>
+        
 
         <div className="mtgCalculator__resultWrapper">
           {payment >= 0 ? (
@@ -239,8 +225,23 @@ export default function HumbleVersion(props) {
               </p>
             </div>
           ) : (
-            <div>Income to Debt ratio is too high!</div>
+            <div className="mtgCalculator__result--item">Income to Debt ratio is too high!</div>
           )}
+        </div>
+        <div className="mtgCalculator__formButtons">
+          <button
+            className="mtgCalculator__button"
+            onClick={() => {
+              mortgagePayment();
+              mortgageAmt();
+             
+            }}
+          >
+            Calculate
+          </button>
+          <button className="mtgCalculator__button" onClick={postData}>
+            Save
+          </button>
         </div>
       </form>
     </section>

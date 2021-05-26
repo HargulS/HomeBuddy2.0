@@ -10,7 +10,6 @@ const readData = path.join(__dirname, "../data/userData.json");
 
 function listUserData() {
   const data = fs.readFileSync(readData);
-  // JSON to JS: getting the data from JSON and converting to JS so that we can use it
   return JSON.parse(data);
 }
 router.get("/", (req, res) => {
@@ -26,7 +25,7 @@ function getUserDataByID(id) {
     return "The record you are looking for does not exist";
   }
 }
-//key that is created which is coming from info requested
+
 router.get("/:id", (req, res) => {
   res.json(getUserDataByID(req.params.id));
 });
@@ -35,7 +34,6 @@ function saveUserSession(body) {
   const dataArray = listUserData();
   const newArray = NewListUserData(body);
   dataArray.push(newArray);
-  //.stringify: when info is recieved in JS and needs to be converted in JSON
   fs.writeFileSync(readData, JSON.stringify(dataArray));
   return newArray;
 }
@@ -53,7 +51,9 @@ function NewListUserData(body) {
     contributions:body.contributions,
     interest:body.interest,
     years:body.years,
-    futureValue: body.futureValue
+    futureValue: body.futureValue,
+    employment:body.employment,
+    documents:body.documents
   }
 }
 router.post("/", (req, res) => {
@@ -69,6 +69,8 @@ function update(id,data){
   filteredObject[0].interest=data.interest
   filteredObject[0].years=data.years
   filteredObject[0].futureValue=data.futureValue
+  filteredObject[0].employment=data.employment
+  filteredObject[0].documents=data.documents
  const filteredArray = dataArray.filter((item) => item.id !== id);
 filteredArray.push(filteredObject[0])
   fs.writeFileSync(readData, JSON.stringify(filteredArray))

@@ -3,10 +3,17 @@ import HumbleVersion from "./HumbleVersion"
 import SavingsCalculator from "./SavingsCalculator"
 import DocumentsInterestRates from "./DocumentsInterestRates"
 import SummaryPage from "./SummaryPage"
+import DisplaySummary from "./DisplaySummary"
 import Swiper from "./Swiper/Swiper"
 
-export default function Homepage() {
+import React, { useState } from "react";
+
+
+export default function Homepage(props) {
+  const [id, setId] =useState()
   return (
+   
+
     <section className="homepage">
       <container className="homepage__heroBanner">
      <div className="homepage__swiper">
@@ -25,7 +32,7 @@ export default function Homepage() {
               <div className="homepage__cardsAll">
           <div className="homepage__cards">
             <div className="homepage__cardItems">
-              <HumbleVersion />
+              <HumbleVersion id={setId} />
             </div>
            
 
@@ -33,21 +40,29 @@ export default function Homepage() {
 
           <div className="homepage__cards">
             <div className="homepage__cardItems">
-              <SavingsCalculator />
+              <SavingsCalculator id={id} />
             </div>
            
 
           </div>
           <div className="homepage__cards">
             <div className="homepage__cardItems">
-              <DocumentsInterestRates />
+              <DocumentsInterestRates id={id} />
             </div>
           </div>
+          <div className="homepage__cards homepage__cards--summary">
+            <div className="homepage__cardItems">
+            <SummaryPage id={id}/>
+            {/* <DisplaySummary id={id}/> */}
+       
+            </div>
+          </div>
+          <div className="homepage__cardsSmWr"></div>
+
         </div>
       </container>
-      <container className="homepage__summary">
-        <SummaryPage/>
-      </container>
+  
+   
     </section>
   );
 }

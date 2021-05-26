@@ -151,12 +151,12 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 2948px;
+  height: 3100px;
 }
 
 @media (min-width: 768px) {
   .homepage {
-    height: 3300px;
+    height: 3198px;
   }
 }
 
@@ -260,6 +260,7 @@ nav {
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(30, 32, 34, 0.5);
   background-color: #f0f5f9;
   margin-bottom: 48px;
+  max-width: 1920px;
 }
 
 @media (min-width: 768px) {
@@ -364,7 +365,6 @@ nav {
 }
 
 .homepage__cardItemsTitle {
-  height: auto;
   padding: 5px;
   font-size: 2.5vw;
   background-color: #cfcfcf;
@@ -388,6 +388,34 @@ nav {
   .homepage__cardItemsBody {
     font-size: 1.5rem;
     background-color: #cfcfcf;
+  }
+}
+
+@media (min-width: 950px) {
+  .homepage__cardsSmWr {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.homepage__cards--summary {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  bottom: 2.5%;
+  z-index: 1;
+  margin-top: -2rem;
+}
+
+@media (min-width: 950px) {
+  .homepage__cards--summary {
+    position: absolute;
+    top: 92%;
+    height: 0;
   }
 }
 
@@ -531,8 +559,7 @@ button:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 auto;
-  width: 90%;
+  width: 100%;
   height: 615px;
   top: 33px;
   padding-top: 0px;
@@ -560,7 +587,7 @@ button:hover {
 .savings__formHeading {
   padding-bottom: 10px;
   font-size: 1.85rem;
-  padding-top: 24px;
+  padding-top: 32px;
 }
 
 @media (min-width: 950px) {
@@ -581,6 +608,8 @@ button:hover {
   width: inherit;
   margin-bottom: 48px;
   background-color: transparent;
+  left: 2.5%;
+  width: 100%;
 }
 
 .savings__formLabelDiv {
@@ -602,7 +631,7 @@ button:hover {
 .savings .savings__form input {
   position: absolute;
   z-index: -1;
-  width: 100%;
+  width: 90%;
   top: 9px;
 }
 
@@ -620,18 +649,6 @@ button:hover {
 }
 
 @media (min-width: 550px) {
-  .savings__cardImg {
-    width: 360px;
-  }
-}
-
-@media (min-width: 950px) {
-  .savings__cardImg {
-    width: 300px;
-  }
-}
-
-@media (min-width: 1150px) {
   .savings__cardImg {
     width: 360px;
   }
@@ -663,8 +680,13 @@ button:hover {
         -ms-flex-direction: row;
             flex-direction: row;
     position: relative;
-    top: 12%;
+    top: 20%;
   }
+}
+
+.savings__formButtons {
+  margin: 0 auto;
+  width: 10 0%;
 }
 
 .savings__button {
@@ -677,12 +699,22 @@ button:hover {
   font-weight: bold;
   text-align: left;
   line-height: 1.5;
+  padding-left: 24px;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .savings__result--item {
+    line-height: 2;
+    padding-left: 32px;
+  }
 }
 
 @media (min-width: 950px) {
   .savings__result--item {
+    padding-left: 0;
     position: relative;
-    top: 31.8%;
+    top: 19.5%;
     text-align: left;
   }
 }
@@ -712,14 +744,8 @@ button:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  line-height: 0;
-  margin: 0 auto;
-  width: 90%;
+  width: 100%;
   height: 650px;
-  left: 5%;
   top: 35px;
   z-index: 1;
 }
@@ -754,13 +780,6 @@ button:hover {
   }
 }
 
-@media (min-width: 950px) {
-  .mtgCalculator__cardImg {
-    width: 300px;
-    max-width: 500px;
-  }
-}
-
 @media (min-width: 1150px) {
   .mtgCalculator__cardImg {
     width: 360px;
@@ -774,6 +793,13 @@ button:hover {
   width: inherit;
   margin-bottom: 48px;
   background-color: transparent;
+  left: 2.5%;
+}
+
+@media (min-width: 950px) {
+  .mtgCalculator__formLabel {
+    left: 0;
+  }
 }
 
 .mtgCalculator__formLabel-ml {
@@ -815,7 +841,7 @@ button:hover {
 .mtgCalculator .mtgCalculator__form input {
   position: absolute;
   z-index: -1;
-  width: 100%;
+  width: 90%;
   top: 9px;
 }
 
@@ -867,20 +893,21 @@ button:hover {
 
 .mtgCalculator__resultWrapper {
   width: 90%;
+  margin-top: -22px;
 }
 
 @media (min-width: 950px) {
   .mtgCalculator__resultWrapper {
     position: relative;
-    top: -5%;
-    left: -5%;
+    top: -.5%;
+    left: 1.8%;
   }
 }
 
 .mtgCalculator__result--item {
   line-height: 2;
+  padding-left: 24px;
   text-align: left;
-  margin-top: 15px;
   margin-bottom: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -897,9 +924,16 @@ button:hover {
   font-weight: bold;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 768px) {
   .mtgCalculator__result--item {
     line-height: 2;
+    padding-left: 32px;
+  }
+}
+
+@media (min-width: 950px) {
+  .mtgCalculator__result--item {
+    padding-left: 0;
   }
 }
 
@@ -1293,6 +1327,23 @@ input {
   }
 }
 
+.docsRates__formHeading {
+  margin-top: -14px;
+}
+
+@media (min-width: 950px) {
+  .docsRates__formHeading {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 950px) {
+  .docsRates__formWr {
+    position: relative;
+    top: 2%;
+  }
+}
+
 .docsRates__form {
   margin: 0 auto;
   display: -webkit-box;
@@ -1305,17 +1356,17 @@ input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
+  width: 90%;
   position: relative;
   top: 6%;
-  padding-left: 7px;
+  height: 200px;
 }
 
 @media (min-width: 950px) {
   .docsRates__form {
+    position: absolute;
     padding-left: 0;
     height: 430px;
-    top: -1.55%;
     left: 0;
     padding-top: 44px;
   }
@@ -1329,7 +1380,7 @@ input {
 
 .docsRates__cardImgWrapper {
   position: relative;
-  top: -11%;
+  top: -15%;
   left: -12%;
   width: 360px;
   margin: 0 auto;
@@ -1354,8 +1405,11 @@ input {
 
 @media (min-width: 950px) {
   .docsRates__cardImg {
+    position: relative;
+    top: 20px;
     width: 300px;
     max-width: 500px;
+    top: -30px;
   }
 }
 
@@ -1379,7 +1433,13 @@ input {
   position: relative;
   top: -10%;
   text-align: left;
-  padding-left: 8px;
+  margin-left: -5px;
+}
+
+@media (min-width: 768px) {
+  .docsRates__formHeading2 {
+    margin-left: -7px;
+  }
 }
 
 @media (min-width: 950px) {
@@ -1392,18 +1452,12 @@ input {
   }
 }
 
-@media (min-width: 1150px) {
-  .docsRates__formHeading2 {
-    top: -14%;
-  }
-}
-
 .docsRates .docsRates__form label {
   font-family: TitilliumWeb-SemiBold;
   font-size: 1.75rem;
   position: relative;
   height: 75px;
-  width: 300px;
+  width: 298px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1416,6 +1470,13 @@ input {
           justify-content: space-between;
   top: -7%;
   background-color: transparent;
+  margin-left: -4px;
+}
+
+@media (min-width: 768px) {
+  .docsRates .docsRates__form label {
+    margin-left: -8px;
+  }
 }
 
 @media (min-width: 950px) {
@@ -1451,32 +1512,38 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 12px;
+  margin-left: -5px;
   padding-right: 12px;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 1.5;
   max-height: 400px;
-  top: 5%;
+  top: -5.8%;
   text-align: left;
+  width: 90%;
+}
+
+@media (min-width: 411px) {
+  .docsRates__ternaryWrapper {
+    font-size: 1.55rem;
+  }
 }
 
 @media (min-width: 768px) {
   .docsRates__ternaryWrapper {
-    font-size: 1.55rem;
-    padding-top: 4rem;
+    margin-left: -8px;
   }
 }
 
 @media (min-width: 950px) {
   .docsRates__ternaryWrapper {
     top: -9.2%;
-    font-size: 1.55rem;
+    font-size: 1.4rem;
   }
 }
 
 @media (min-width: 1150px) {
   .docsRates__ternaryWrapper {
-    top: -2.5%;
+    top: -50px;
   }
 }
 
@@ -1493,12 +1560,6 @@ input {
   height: inherit;
 }
 
-@media (min-width: 950px) {
-  .docsRates__listSalaried {
-    position: absolute;
-  }
-}
-
 .docsRates__listSelfEmp {
   position: relative;
   top: 0%;
@@ -1509,6 +1570,36 @@ input {
     position: absolute;
     top: 97%;
   }
+}
+
+.docsRates__btnWr {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 950px) {
+  .docsRates__btnWr {
+    position: absolute;
+    top: 164.7%;
+    left: 0%;
+  }
+}
+
+@media (min-width: 1150px) {
+  .docsRates__btnWr {
+    top: 171.4%;
+  }
+}
+
+.docsRates__button {
+  position: absolute;
+  top: 348%;
+  width: 250px;
 }
 
 .modal {
@@ -1597,11 +1688,13 @@ input {
   color: #dee6eb;
   position: relative;
   margin: 0 auto;
-  font-size: 2.7rem;
+  font-size: 2.3rem;
+  margin-top: 12px;
 }
 
 @media (min-width: 768px) {
   .swiperHeading__heading {
+    margin-top: 0;
     font-size: 5.5rem;
   }
 }
@@ -1632,11 +1725,13 @@ input {
 
 .slideHeading {
   color: #dee6eb;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+  margin-top: 24px;
 }
 
 @media (min-width: 768px) {
   .slideHeading {
+    margin-top: 0px;
     font-size: 2.75rem;
   }
 }
@@ -1717,7 +1812,7 @@ input {
 }
 
 .swiper-pagination {
-  bottom: 100px !important;
+  bottom: 130px !important;
 }
 
 @media (min-width: 768px) {
@@ -1736,15 +1831,12 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-image: url("../assets/images/wave3.png");
+  font-size: 1.55rem;
   background-size: cover;
   width: 100%;
-}
-
-@media (min-width: 768px) {
-  .summary {
-    height: 100vh;
-  }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .summary__listContainer {
@@ -1753,6 +1845,13 @@ input {
   padding-left: 6px;
   padding-right: 24px;
   line-height: 2;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .summary__listContainer ul {
@@ -1773,7 +1872,9 @@ input {
   padding-top: 10px;
 }
 
-.summaryList__items {
+.summary__list {
+  background-color: #f0f5f9;
+  background-size: 100% 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1781,6 +1882,67 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 0px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 2%;
+  width: 25.7vw;
+  height: 900px;
+  padding-left: 24px;
+  border-radius: 15px;
+}
+
+.summary__list:after {
+  content: "";
+  position: absolute;
+  background-image: url("../assets/images/suburbs.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  top: 45%;
+  width: 90%;
+  height: 50%;
+}
+
+.summary__list:before {
+  content: "";
+  background-color: #007aff;
+  position: absolute;
+  border-radius: 5px;
+  width: 94.2vw;
+  height: 1082px;
+  z-index: -1;
+  bottom: -5%;
+  left: -123.5%;
+  opacity: .4;
+}
+
+.summary__items {
+  text-align: left;
+}
+
+.summary__shwBtn {
+  position: relative;
+  left: 7px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+@media (min-width: 950px) {
+  .summary__shwBtn {
+    position: relative;
+    max-width: 250px;
+  }
+}
+
+.summary__clsBtn {
+  position: relative;
+  z-index: 2;
+  width: 250px;
+  margin-left: 10px;
 }
 /*# sourceMappingURL=App.css.map */
