@@ -19,18 +19,17 @@ export default function Menu() {
       >
         <ul>
           <li>
-            <Link to='/mortgageaffordability'>
-              Step 1
-            </Link>
+            
+              Lorem
+           
           </li>
           <li>
-            <Link to='/savingscalculator'>
-              Step 2
-            </Link>
+              Ipsum
+          
           </li>
         
-          <li>  <Link to='/documentsandinterestrates'>
-             Step 3 </Link>
+          <li className="menu__ltI">  
+             Dolar 
           </li>
          
         </ul>

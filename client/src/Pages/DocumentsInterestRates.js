@@ -17,7 +17,7 @@ const API_URL = process.env.NODE_ENV === "production"
 
 
 export default function DocumentsInterestRates(props) {
-  const [employment, setEmployment] = useState("salaried");
+  const [employment, setEmployment] = useState("Salaried");
   const [documents, setDocuments] = useState(["1. Annual Income Documents( to confirm consistency of income) Two years most recentNotice of Assessment or","Year end paystubs of previous two years mentioningYear To Date(YTD)amount","2. Current Income(To confirm your employment status)  Three-four most recent paychecks or Direct Deposit history of last 2-3 months",
   "or","Letter Of Employment(no older than 90 days is preferable)"]
 );
@@ -134,10 +134,7 @@ const docSE=  <ul className="docsRates__listSelfEmp">
 
  const  handleDocuments =(e)=>{
  
-setDocuments("1.Two years most recentNotice of Assessment",
-"2. CompleteT1 Generalof last 2 Tax years",
-"3. Accountant preparedCash Flow Statements",
-"4.Articles of Incorporation(needed only if the business is incorporated)",
+setDocuments("1.Two years most recentNotice of Assessment","2. CompleteT1 Generalof last 2 Tax years","3. Accountant preparedCash Flow Statements","4.Articles of Incorporation(needed only if the business is incorporated)",
 
 )
 
@@ -222,7 +219,7 @@ const patchSummary =(e)=>{
           </label>
         <div className="docsRates__ternaryWrapper">
       
-              {employment === "Salaried".toLowerCase() ? (
+              {employment === "Salaried" ? (
                 docS
               ) : 
                 employment === "Self-Employed".toLowerCase() ? (

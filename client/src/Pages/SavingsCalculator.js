@@ -81,7 +81,7 @@ export default function SavingsCalculator(props) {
                  
         <section className="savings">
             <h2 className="savings__formHeading">
-                2.Start Saving</h2>
+                2. Start Saving</h2>
                 <div className ="savings__formWr">
             <form className="savings__form" onSubmit={(e) => e.preventDefault(e)}>
             <div className="savings__cardImgWrapper">

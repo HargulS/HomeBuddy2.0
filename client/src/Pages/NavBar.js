@@ -13,7 +13,11 @@ export default function NavBar() {
           <img alt="house logo" className="navbar__siteLogo"src={HouseLogo}/>
           <h1 className="navbar__siteTitle">HomeBuddy </h1>
     </Link>
-
+    <div className="navbar__barIcon">
+           <FontAwesomeIcon icon="bars"
+        className="navbar__bar"
+         />
+        </div>
       <section className="navbar__menu">
        <div className="navbar__menuItems">
         <Menu />
@@ -33,7 +37,6 @@ export default function NavBar() {
         <SignIn />
         <FontAwesomeIcon icon="sign-in-alt" className="navbar__menuIcons"/>
         </div>
-       
       </section>
       </section>
     </nav>

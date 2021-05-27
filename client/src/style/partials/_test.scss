@@ -19,7 +19,7 @@
 .menu ul {
   list-style: none;
   position: absolute;
-  background-color:$nav;
+  background-color:#d7e1e8;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -42,4 +42,8 @@
 }
 .menu-container__resourcesList{
   width: 15vh !important;
+  background-color: #dee7ed !important;
+}
+.summaryResourcesList__items-ltI{
+  border-bottom:none !important;
 }

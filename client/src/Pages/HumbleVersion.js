@@ -112,7 +112,7 @@ export default function HumbleVersion(props) {
   return (
     <section className="mtgCalculator">
       <h2 className="mtgCalculator__formHeading">
-        1.Maximum Mortgage You can Afford
+        1. Maximum Mortgage You can Afford
       </h2>
 
       <form

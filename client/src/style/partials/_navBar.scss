@@ -5,6 +5,7 @@ nav{
   
   
 }
+
 .navbar {
   margin: 0 auto;
   display: flex;
@@ -13,7 +14,7 @@ nav{
   position: relative;
   z-index: 9;
   max-width:$desktop-xl-breakpoint;
-  height: 5.5vh;
+  height: 5rem;
   @include tab-s {
     justify-content: space-between;
     align-items: center;
@@ -39,8 +40,9 @@ nav{
   
 
 &__siteLogo{
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 4rem;
+  height: 4rem;
+  padding-right: 5px;
   @include tab-s {
     padding-left: 24px;
   }
@@ -76,5 +78,23 @@ nav{
     padding-left: 5px;
     padding-right:7px;
     margin-left: 5px;
+  }
+  &__barIcon{
+    position: absolute;
+    left:24px;
+    top: 28%;
+    font-size: 2.5rem;
+    color:#007AFF;
+    &__bar{
+      border-left: none;
+      
+    }
+   
+    @include tab-m{
+      display: none;
+    }
+  }
+  .menu__ltI{
+    border-bottom: none !important;
   }
 }

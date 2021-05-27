@@ -19,11 +19,6 @@ h1,h2,h3,h4,h5{
   font-weight: bold;
 }
 
-input {
-  border-radius: 5px;
-  box-shadow: 0px 1px 9px -4px #000000;
-}
-
 label {
   color: black;
 }
@@ -64,6 +59,8 @@ label{
 
 
 input{
+  border-radius: 5px;
+  box-shadow: 0px 1px 9px -4px #000000;
   border:#25282d  solid 1px;
   height: 30px;
   background-color: #f0f5f9;

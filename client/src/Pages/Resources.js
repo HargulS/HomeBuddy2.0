@@ -22,7 +22,7 @@ export default function Resources() {
             <li className="summary__resourcesListItems"><a className="modal__link" href="https://www.bcassessment.ca/">BC Assessment</a> </li>
             <li className="summaryResourcesList__items"><a className="modal__link" href='https://www.zillow.com/homes/Vancouver,-BC_rb/'>Zillow.ca</a> </li>
             <li className="summaryResourcesList__items"><a className="modal__link" href='https://www.realtor.ca/en'>Realtor.ca</a> </li>
-            <li className="summaryResourcesList__items">
+            <li className="summaryResourcesList__items summaryResourcesList__items-ltI">
             <a className="modal__link" href='https://www.rew.ca/'>Rew.ca</a></li>
             </ul>
         </nav>
