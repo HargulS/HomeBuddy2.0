@@ -58,11 +58,11 @@
   &__cardsWrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 95%;
     margin: 0 auto;
     position: relative;
-    top: -1.8%;
+    top: -1.7%;
     border-radius: 10px;
     border: solid 0.5px #52616b;
     -webkit-box-shadow: 0px 10px 13px -7px #000000,
@@ -72,6 +72,7 @@
     background-color: #f0f5f9;
     margin-bottom: 48px;
     max-width: 1920px;
+    z-index: 0;
     @include tab-s {
       top: -1.6%;
     }

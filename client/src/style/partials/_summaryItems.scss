@@ -33,32 +33,41 @@
       }
     }
   }
+  &__items {
+    text-align: left;
+  }
+  &__summaryItems {
+    display: flex;
+    justify-content: center;
+  }
   &__list {
     background-color: #f0f5f9;
-   
- background-size: 100% 100%;
-
-
+    background-size: 100% 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin: 0 auto;
+    margin-left: 15px;
     position: absolute;
-  bottom:2%;
-    width: 25.7vw;
-    height: 900px;
-    padding-left: 24px;
-    border-radius: 15px;
-    &:after{
-      content: "";
-      position: absolute;
-      background-image: url("../assets/images/suburbs.svg");
-     background-repeat: no-repeat;
-   background-size: 100% 100%;
-   top: 45%;
-   width: 90%;
-   height: 50%;
+    bottom: 30%;
+    height: 1200px;
+    width: 30rem;
+    padding-left: 12px;
+    padding-right: 12px;
+    max-width: 500px;
+ 
+    
+    @include ph-m {
+      width: 90vw;
+    }
+    @include tab-m {
+      bottom: 0%;
+      height: 1020px;
+      padding-left: 24px;
+      padding-right: 24px;
+      border-radius: 15px;
+   
+    }
+    @include desktop-sm{
+      bottom: -100%;
     }
 
     &:before {
@@ -66,35 +75,45 @@
       background-color: #007aff;
       position: absolute;
       border-radius: 5px;
-      width: 94.2vw;
-      height: 1082px;
-      z-index: -1;
-      bottom: -5%;
-      left: -123.5%;
-      opacity: .4;
-  
+      width: 200vw;
+      height: 2680px;
+      z-index: -2;
+      bottom: -3.4%;
+      margin-left: -10rem;
+      opacity: 0.4;  
+      left: -50%;
+      @include tab-m {
+        width: 1000vw;
+        height: 1035px;
+        bottom: -0.5%;
+        left: -1000%;
+      }
     }
   }
-  &__items{
-  text-align: left;
-  }
+
   &__shwBtn {
     position: relative;
     left: 7px;
     width: 250px;
     margin: 0 auto;
-     @include tab-m {
-      position: relative;
-      max-width: 250px;
    
-   
+    @include tab-m {
+      left: 5px;
+      
     }
+    
+   
   }
-  &__clsBtn{
+  &__clsBtn {
     position: relative;
+    bottom: 80px;
     z-index: 2;
     width: 250px;
-    margin-left: 10px;
-   
+    margin-left: 9px;
+    @include desktop-sm{
+      position: relative;
+      right: 25%;
+      top: -44px;
+    }
   }
 }

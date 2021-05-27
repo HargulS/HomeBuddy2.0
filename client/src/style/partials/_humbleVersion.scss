@@ -15,7 +15,6 @@
     justify-content: space-between;
     width: 100%;
 height: 650px;
-  // left: 5%;
   top: 35px;
   z-index: 1;
 
@@ -35,8 +34,8 @@ height: 650px;
     justify-content: center;
   }
   &__cardImg{
-  //  width: 70%;
   width: 300px;
+
   @include ph-l{
     width: 360px;
   }

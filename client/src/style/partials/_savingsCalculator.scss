@@ -73,17 +73,12 @@
     justify-content: center;
   }
   &__cardImg {
-    //  width: 70%;
+   
     width: 300px;
     @include ph-l {
       width: 360px;
     }
-    // @include tab-m {
-    //   width: 300px;
-    // }
-    // @include desktop-s {
-    //   width: 360px;
-    // }
+    
   }
   &__formButtons {
     display: flex;

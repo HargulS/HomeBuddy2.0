@@ -39,6 +39,11 @@
     @content;
   }
 }
+@mixin desktop-sm {
+  @media (min-width: $desktop-sm-breakpoint) {
+    @content;
+  }
+}
 @mixin desktop-m {
   @media (min-width:$desktop-m-breakpoint) {
     @content;

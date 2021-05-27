@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Axios from "axios";
-import calculator from "../assets/images/calculator2.svg";
+import calculator from "../assets/images/calculator3.svg";
 
 const API_URL =
   process.env.NODE_ENV === "production"
@@ -216,11 +216,11 @@ export default function HumbleVersion(props) {
           {payment >= 0 ? (
             <div className="mtgCalculator__result--item">
               <p>
-                Total Mortgage You Can Afford:{" "}
+                Mortgage:
                 <i className="result"> ${result}</i>
               </p>
               <p>
-                You can afford monthly payments of:{" "}
+                Monthly Payments:
                 <i className="result"> ${payment}</i>
               </p>
             </div>
