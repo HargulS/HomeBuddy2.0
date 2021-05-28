@@ -16,18 +16,18 @@ const API_URL =
 
 export default function DocumentsInterestRates(props) {
   const [employment, setEmployment] = useState("Salaried".toUpperCase());
-  const [documents, setDocuments] = useState("1). Annual Income Documents( to confirm consistency of income) Two years most recentNotice of Assessment or Year end paystubs of previous two years mentioningYear To Date(YTD)amount 2). Current Income(To confirm your employment status)  Three-four most recent paychecks or Direct Deposit history of last 2-3 months or Letter Of Employment(no older than 90 days is preferable)");
+  const [documents, setDocuments] = useState(
+    "1). Annual Income Documents( to confirm consistency of income) Two years most recentNotice of Assessment or Year end paystubs of previous two years mentioningYear To Date(YTD)amount 2). Current Income(To confirm your employment status)  Three-four most recent paychecks or Direct Deposit history of last 2-3 months or Letter Of Employment(no older than 90 days is preferable)"
+  );
   const [isOpen, setIsOpen] = useState(null);
   const [isOpenPaycheck, setIsOpenPaycheck] = useState(null);
   const [isOpenT1Gen, setIsOpenT1Gen] = useState(null);
   const [isOpenArticles, setIsOpenArticles] = useState(null);
   const [isOpenCashFlow, setIsOpenCashFlow] = useState(null);
   const [isOpenCRAReg, setIsOpenCRAReg] = useState(null);
-
   const handleEmployment = (e) => {
     setEmployment(e.target.value.toUpperCase());
   };
-
   const docS = (
     <ul className="docsRates__listSalaried">
       <h3>Documents Needed:</h3>
@@ -64,7 +64,6 @@ export default function DocumentsInterestRates(props) {
       <li>Letter Of Employment(no older than 90 days is preferable)</li>
     </ul>
   );
-
   const docSE = (
     <ul className="docsRates__listSelfEmp">
       <h3>Documents Needed:</h3>
@@ -108,32 +107,28 @@ export default function DocumentsInterestRates(props) {
       </li>
     </ul>
   );
-
   const handleDocuments = (e) => {
-    if(employment === "Salaried".toUpperCase()){
-      setDocuments( "1).Two years most recent Notice of Assessment 2). Complete T1 General of last 2 tax years 3). Accountant prepared Cash Flow Statements 4). Articles of Incorporation(needed only if the business is incorporated)")
+    if (employment === "Salaried".toUpperCase()) {
+      setDocuments(
+        "1).Two years most recent Notice of Assessment 2). Complete T1 General of last 2 tax years 3). Accountant prepared Cash Flow Statements 4). Articles of Incorporation(needed only if the business is incorporated)"
+      );
+    } else {
+      setDocuments(
+        "1). Annual Income Documents( to confirm consistency of income) Two years most recentNotice of Assessment or Year end paystubs of previous two years mentioningYear To Date(YTD)amount 2). Current Income(To confirm your employment status)  Three-four most recent paychecks or Direct Deposit history of last 2-3 months or Letter Of Employment(no older than 90 days is preferable)"
+      );
     }
-   else{
-     setDocuments("1). Annual Income Documents( to confirm consistency of income) Two years most recentNotice of Assessment or Year end paystubs of previous two years mentioningYear To Date(YTD)amount 2). Current Income(To confirm your employment status)  Three-four most recent paychecks or Direct Deposit history of last 2-3 months or Letter Of Employment(no older than 90 days is preferable)")
-    }
-    
-    
   };
-
-  console.log("EMPLOYMENT", employment);
-  console.log("DOCUMENTS", documents);
-
   const patchSummary = (e) => {
     const editData = {
       employment: employment,
       documents: documents,
     };
-    console.log("editDataDocs",editData)
+    console.log("editDataDocs", editData);
     Axios.patch(`${API_URL}/api/start/${props.id}`, editData)
       .then((response) => {
         alert("Saved! Please click ok to continue");
         const data = response.editData;
-        console.log("DOCSDATA",data)
+        console.log("DOCSDATA", data);
       })
       .catch((error) => {
         console.log(error);
@@ -142,32 +137,26 @@ export default function DocumentsInterestRates(props) {
   return (
     <>
       <Modal open={isOpen} onClose={() => setIsOpen(false)}></Modal>
-
       <ModalT1Gen
         open={isOpenT1Gen}
         onClose={() => setIsOpenT1Gen(false)}
       ></ModalT1Gen>
-
       <ModalPaycheck
         open={isOpenPaycheck}
         onClose={() => setIsOpenPaycheck(false)}
       ></ModalPaycheck>
-
       <ModalArticlesIncorporation
         open={isOpenArticles}
         onClose={() => setIsOpenArticles(false)}
       ></ModalArticlesIncorporation>
-
       <ModalCashFlow
         open={isOpenCashFlow}
         onClose={() => setIsOpenCashFlow(false)}
       ></ModalCashFlow>
-
       <ModalCRARegNumber
         open={isOpenCRAReg}
         onClose={() => setIsOpenCRAReg(false)}
       ></ModalCRARegNumber>
-
       <main className="docsRates">
         <h2 className="docsRates__formHeading">
           3. Documents For Mortgage Application
@@ -192,7 +181,6 @@ export default function DocumentsInterestRates(props) {
               defaultChecked={true}
               onClick={handleDocuments}
               onChange={handleEmployment}
-              
             />
           </label>
           <label>
@@ -206,19 +194,16 @@ export default function DocumentsInterestRates(props) {
             />
           </label>
           <div className="docsRates__ternaryWrapper">
-     
-            
             {employment === "Salaried".toUpperCase()
-              ? docS 
+              ? docS
               : employment === "Self-Employed".toUpperCase()
-              ? docSE 
+              ? docSE
               : null}
           </div>
           <div className="docsRates__btnWr">
             <button
               className="docsRates__button"
               onClick={(e) => {
-                // handleDocuments();
                 e.preventDefault();
                 patchSummary();
               }}

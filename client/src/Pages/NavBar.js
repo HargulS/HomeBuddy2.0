@@ -30,7 +30,7 @@ export default function NavBar() {
           </div>
           <div className="navbar__menuItems">
             <Team />
-            <FontAwesomeIcon icon="sign-in-alt" className="navbar__menuIcons" />
+            <FontAwesomeIcon icon="users" className="navbar__menuIcons" />
           </div>
           <div className="navbar__menuItems">
             <SignIn />
