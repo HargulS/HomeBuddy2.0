@@ -1,5 +1,5 @@
 .swiperHeading {
-  @include tab-s{
+  @include tab-s {
     margin-bottom: 125px;
   }
   &__heading {
@@ -11,36 +11,32 @@
     @include tab-s {
       margin-top: 0;
       font-size: 5.5rem;
-     
     }
   }
 }
 .swiper-container {
   width: 100%;
   @include tab-s {
-   width: 50vw;
-   position: relative;
-   top: -22%;
+    width: 50vw;
+    position: relative;
+    top: -22%;
   }
-  @include desktop-m{
+  @include desktop-m {
     margin-left: 0 !important;
-    margin-right:0 !important;
+    margin-right: 0 !important;
   }
 }
 .swiper-wrapper {
   width: 100%;
   height: 300px !important;
-  @include desktop-s{
- 
+  @include desktop-s {
   }
 }
 .swiper-slide {
   @include tab-s {
- 
   }
 }
 
-  
 .slideHeading {
   color: #dee6eb;
   font-size: 1.5rem;
@@ -48,8 +44,6 @@
   @include tab-s {
     margin-top: 0px;
     font-size: 2.75rem;
-   
-    
   }
 }
 .swiperButton {
@@ -57,10 +51,10 @@
   border-radius: 6px;
   background-color: #c9d6df;
   color: #1e2022;
-  position:absolute;
+  position: absolute;
   transform: translate(-50%);
   top: 36%;
-  @include ph-xs{
+  @include ph-xs {
     font-size: 1rem;
   }
   @include tab-s {
@@ -75,11 +69,6 @@
     color: white;
   }
 }
-// .swiper-button-next,
-// .swipe-button-prev{
- 
- 
-// }
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 3rem !important;
@@ -87,41 +76,33 @@
   opacity: 1 !important;
   position: relative;
   top: -60%;
-  @include tab-s{
+  @include tab-s {
     top: 120%;
     font-size: 5.5rem !important;
-    
   }
-
-
 }
-.swiper-button-next::after{
-  @include desktop-xl{
+.swiper-button-next::after {
+  @include desktop-xl {
     position: absolute;
-   left:-00%;
+    left: -00%;
   }
-  @include desktop-xxl{
-    left:-240px;
-    margin-right:0px;
-   }
+  @include desktop-xxl {
+    left: -240px;
+    margin-right: 0px;
+  }
 }
-.swiper-button-prev::after{
-  @include desktop-xl{
+.swiper-button-prev::after {
+  @include desktop-xl {
     position: absolute;
   }
-  @include desktop-xxl{
-   right:-240px;
-  
+  @include desktop-xxl {
+    right: -240px;
   }
 }
 .swiper-pagination {
   bottom: 130px !important;
-  @include tab-s{
-   
+  @include tab-s {
     position: absolute;
-top:94%;
-
-
-
+    top: 94%;
   }
 }

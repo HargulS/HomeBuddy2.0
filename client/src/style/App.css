@@ -185,7 +185,7 @@ nav {
 
 @media (min-width: 950px) {
   .homepage {
-    height: 1688px;
+    height: 1788px;
   }
 }
 
@@ -923,7 +923,7 @@ button:hover {
 @media (min-width: 950px) {
   .mtgCalculator__resultWrapper {
     position: relative;
-    top: -.5%;
+    top: -0.5%;
     left: 1.8%;
   }
 }
@@ -1215,7 +1215,11 @@ html {
   font-size: 66.5%;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   color: black;
   font-weight: bold;
 }
@@ -1272,7 +1276,7 @@ input {
   border-radius: 5px;
   -webkit-box-shadow: 0px 1px 9px -4px #000000;
           box-shadow: 0px 1px 9px -4px #000000;
-  border: #25282d  solid 1px;
+  border: #25282d solid 1px;
   height: 30px;
   background-color: #f0f5f9;
 }
@@ -1294,8 +1298,9 @@ input {
 }
 
 .info {
-  color: #007AFF;
+  color: #007aff;
   font-weight: 700;
+  margin-left: 5px;
 }
 
 .info:hover {
@@ -1909,6 +1914,30 @@ input {
 
 .summary__items {
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+  line-height: 1.6;
+}
+
+.summary__items-docs {
+  width: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.summary__iNm-docs {
+  margin-top: -5px;
+  margin-right: 5px;
 }
 
 .summary__summaryItems {
@@ -2016,11 +2045,17 @@ input {
   z-index: 5;
 }
 
+@media (min-width: 950px) {
+  .summary__clsBtn {
+    top: -30px;
+  }
+}
+
 @media (min-width: 1192px) {
   .summary__clsBtn {
     position: relative;
     right: 25%;
-    top: -44px;
+    top: 5px;
   }
 }
 /*# sourceMappingURL=App.css.map */

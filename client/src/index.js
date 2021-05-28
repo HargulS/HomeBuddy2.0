@@ -8,11 +8,11 @@ import App from './App';
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <section className="app">
+      <main className="app">
        
     <App/>
    
-    </section>
+    </main>
 
     </Router>
   </React.StrictMode>,

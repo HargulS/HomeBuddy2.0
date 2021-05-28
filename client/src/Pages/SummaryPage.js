@@ -1,4 +1,4 @@
-import React, {useState,useEffect,usePrevious} from 'react';
+import React, {useState} from 'react';
 import Axios from 'axios';
 import SummaryItems from './SummaryItems'
 const API_URL = process.env.NODE_ENV === "production"

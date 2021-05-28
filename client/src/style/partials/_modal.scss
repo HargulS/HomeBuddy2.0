@@ -15,7 +15,6 @@
   font-size: 1.55rem;
   z-index: 2;
   font-family: TitilliumWeb-SemiBold;
-  
   &:after{
     position: absolute;
     left: -50%;
@@ -29,7 +28,6 @@
     @include tab-s{
       height: 200vw;
     }
-
   }
   &__link {
     color: black;

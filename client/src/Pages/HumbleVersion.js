@@ -20,22 +20,21 @@ export default function HumbleVersion(props) {
 
   const [payment, setPayment] = useState(null);
 
-
   const totalExpenses = (liabilities + propertyTax + heatingCost + strata) * 12;
-  console.log("expenses", totalExpenses);
+
 
   const mtgPaymentMonthly = (0.44 * income - totalExpenses) / 12;
-  console.log("mtgpayment monthly", mtgPaymentMonthly);
+ 
 
   const mtgPaymentAnnual = 0.44 * income - totalExpenses;
-  console.log("mtg Annual", mtgPaymentAnnual);
+ 
 
   const nt = 12 * 25;
   const rn = 0.0479 / 12;
   const mortgage =
     (mtgPaymentMonthly * (Math.pow(1 + rn, nt) - 1)) /
     (rn * Math.pow(1 + rn, nt));
-  console.log(mortgage);
+  
 
   const handleName = (e) => {
     setName(e.target.value);
@@ -84,8 +83,7 @@ export default function HumbleVersion(props) {
   };
 
   const totalAnnualExpenses = mtgPaymentAnnual + totalExpenses;
-  console.log("total annual expenses", totalAnnualExpenses);
-
+ 
 
   const captureData = {
     name: name,
@@ -96,15 +94,13 @@ export default function HumbleVersion(props) {
     mortgage: result,
     mortgageInstallment: payment,
   };
-  console.log("CaptureData", captureData);
+
   const postData = (e) => {
     Axios.post(`${API_URL}/api/start`, captureData)
-
       .then((response) => {
         alert("Saved! Please click NEXT to proceed");
         props.id(response.data.id);
       })
-
       .catch((error) => {
         console.log(error);
       });
@@ -114,13 +110,16 @@ export default function HumbleVersion(props) {
       <h2 className="mtgCalculator__formHeading">
         1. Maximum Mortgage You can Afford
       </h2>
-
       <form
         className="mtgCalculator__form"
         onSubmit={(e) => e.preventDefault(e)}
       >
         <div className="mtgCalculator__cardImgWrapper">
-          <img alt="man pointing at calculator illustration" className="mtgCalculator__cardImg" src={calculator} />
+          <img
+            alt="man pointing at calculator illustration"
+            className="mtgCalculator__cardImg"
+            src={calculator}
+          />
         </div>
 
         <label className="mtgCalculator__formLabel">
@@ -167,7 +166,6 @@ export default function HumbleVersion(props) {
             onChange={handleIncome}
           ></input>
         </label>
-
         <label className="mtgCalculator__formLabel">
           <div className="mtgCalculator__formLabelDiv">
             <p>Monthly Liabilities</p>
@@ -179,7 +177,6 @@ export default function HumbleVersion(props) {
             onChange={handleLiabilities}
           ></input>
         </label>
-
         <label className="mtgCalculator__formLabel">
           <div className="mtgCalculator__formLabelDiv">
             <p>Monthly Cost-New Property</p>
@@ -187,31 +184,26 @@ export default function HumbleVersion(props) {
           <input
             type="number"
             name="property taxes"
-            placeholder="Property Taxes"
+            placeholder="New Property-Property Taxes"
             onChange={handlePropertyTax}
           ></input>
         </label>
-
         <label className="mtgCalculator__formLabel mtgCalculator__formLabel-ml">
           <input
             type="number"
             name="Heating Cost"
-            placeholder="Heating Costs"
+            placeholder="New Property-Heating Costs"
             onChange={handleHeatingCost}
           ></input>
         </label>
-
         <label className="mtgCalculator__formLabel mtgCalculator__formLabel-ml-l">
           <input
             type="number"
             name="strata"
-            placeholder="1/2Monthly Strata Fees"
+            placeholder="New Property-1/2Monthly Strata Fees-"
             onChange={handleStrata}
           ></input>
         </label>
-
-        
-
         <div className="mtgCalculator__resultWrapper">
           {payment >= 0 ? (
             <div className="mtgCalculator__result--item">
@@ -225,7 +217,9 @@ export default function HumbleVersion(props) {
               </p>
             </div>
           ) : (
-            <div className="mtgCalculator__result--item">Income to Debt ratio is too high!</div>
+            <div className="mtgCalculator__result--item">
+              Income to Debt ratio is too high!
+            </div>
           )}
         </div>
         <div className="mtgCalculator__formButtons">
@@ -234,7 +228,6 @@ export default function HumbleVersion(props) {
             onClick={() => {
               mortgagePayment();
               mortgageAmt();
-             
             }}
           >
             Calculate

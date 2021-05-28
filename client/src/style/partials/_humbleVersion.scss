@@ -1,98 +1,86 @@
 .mtgCalculator {
   position: relative;
   width: 100%;
- height: 900px;
-  @include tab-m{
-  width: 30vw;
-  max-width: 500px;
-  height: 0px;
+  height: 900px;
+  @include tab-m {
+    width: 30vw;
+    max-width: 500px;
+    height: 0px;
   }
-  
-
   &__form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-height: 650px;
-  top: 35px;
-  z-index: 1;
-
+    height: 650px;
+    top: 35px;
+    z-index: 1;
     @include tab-m {
       position: absolute;
       height: 900px;
-     padding: 0;
-     width: 100%;
-     left: 0;
-     top: 77px;
+      padding: 0;
+      width: 100%;
+      left: 0;
+      top: 77px;
     }
-    
-   
   }
-   &__cardImgWrapper{
+  &__cardImgWrapper {
     display: flex;
     justify-content: center;
   }
-  &__cardImg{
-  width: 300px;
-
-  @include ph-l{
-    width: 360px;
-  }
-
-    @include desktop-s{
+  &__cardImg {
+    width: 300px;
+    @include ph-l {
+      width: 360px;
+    }
+    @include desktop-s {
       width: 360px;
       max-width: 500px;
     }
   }
-  &__formLabel{
+  &__formLabel {
     position: relative;
     z-index: 1;
-    width:inherit;
-    margin-bottom: 48px;  
+    width: inherit;
+    margin-bottom: 48px;
     background-color: transparent;
-    left:2.5%;
-    @include tab-m{
+    left: 2.5%;
+    @include tab-m {
       left: 0;
     }
   }
-    &__formLabel-ml
-   {
+  &__formLabel-ml {
     top: -25px;
   }
-  &__formLabel-ml-l
-  {
-   top: -33px;
-   @include tab-m{
-     top: -35px;
-   }
-   @include desktop-s{
-     top: -35px;
-   }
- 
- }
-  &__formLabelDiv{
+  &__formLabel-ml-l {
+    top: -33px;
+    @include tab-m {
+      top: -35px;
+    }
+    @include desktop-s {
+      top: -35px;
+    }
+  }
+  &__formLabelDiv {
     z-index: 2;
     background-color: #f0f5f9;
     height: 20px;
     width: fit-content;
     display: flex;
     align-items: center;
-    margin-left:10px;
+    margin-left: 10px;
   }
-  .mtgCalculator__form input{
-   position: absolute;
+  .mtgCalculator__form input {
+    position: absolute;
     z-index: -1;
     width: 90%;
-    top:9px;
-
+    top: 9px;
   }
-  &__formHeading{
-    padding-bottom:10px;
+  &__formHeading {
+    padding-bottom: 10px;
     padding-top: 24px;
     font-size: 1.85rem;
-    @include tab-s{
-
+    @include tab-s {
     }
   }
   &__formButtons {
@@ -101,56 +89,46 @@ height: 650px;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    min-height:85px;
+    min-height: 85px;
     margin-top: -12px;
-    @include tab-m{
+    @include tab-m {
       flex-direction: row;
       position: relative;
-      top:-3.5%;
+      top: -3.5%;
     }
-
   }
   &__button {
     width: 250px;
-      @include tab-m{
-        margin-bottom:0;
-      }
-    
+    @include tab-m {
+      margin-bottom: 0;
+    }
   }
- 
-  &__resultWrapper{
+  &__resultWrapper {
     width: 90%;
     margin-top: -22px;
-   @include tab-m{
-     position: relative;
-     top:-.5%;
-     left: 1.8%;
-
-    
-   }
-    
-    
+    @include tab-m {
+      position: relative;
+      top: -0.5%;
+      left: 1.8%;
+    }
   }
-&__result--item{
-  line-height: 2;
-padding-left: 24px;
-text-align: left;
-margin-bottom: 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  font-size: 1.5rem;
-  color:#007aff;
-  font-weight: bold;
-  @include tab-s{
+  &__result--item {
     line-height: 2;
-    padding-left: 32px;
-    
+    padding-left: 24px;
+    text-align: left;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 1.5rem;
+    color: #007aff;
+    font-weight: bold;
+    @include tab-s {
+      line-height: 2;
+      padding-left: 32px;
+    }
+    @include tab-m {
+      padding-left: 0;
+    }
   }
-  @include tab-m{
-    padding-left: 0;
-  }
- 
- 
 }
- }

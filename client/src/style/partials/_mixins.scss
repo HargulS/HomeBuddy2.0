@@ -4,12 +4,12 @@
   }
 }
 @mixin ph-s {
-  @media (min-width:$ph-s-breakpoint ) {
+  @media (min-width: $ph-s-breakpoint) {
     @content;
   }
 }
-@mixin ph-m{
-  @media (min-width:$ph-m-breakpoint) {
+@mixin ph-m {
+  @media (min-width: $ph-m-breakpoint) {
     @content;
   }
 }
@@ -23,7 +23,6 @@
     @content;
   }
 }
-
 @mixin tab-s {
   @media (min-width: $tab-s-breakpoint) {
     @content;
@@ -45,7 +44,7 @@
   }
 }
 @mixin desktop-m {
-  @media (min-width:$desktop-m-breakpoint) {
+  @media (min-width: $desktop-m-breakpoint) {
     @content;
   }
 }

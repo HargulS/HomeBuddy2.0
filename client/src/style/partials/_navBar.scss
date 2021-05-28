@@ -2,10 +2,7 @@ nav{
   width: 100% !important;
   background: rgb(201,214,223);
   background: linear-gradient(90deg, rgba(201,214,223,1) 36%, rgba(240,245,249,1) 100%);
-  
-  
 }
-
 .navbar {
   margin: 0 auto;
   display: flex;
@@ -27,7 +24,6 @@ nav{
   &__siteTitle {
     color: #000000;
     font-size: 2rem;
-
     @include ph-l {
       margin: 0 auto;
       font-size: 2.5rem;
@@ -37,8 +33,6 @@ nav{
       padding-right: 50px;
     }
   }
-  
-
 &__siteLogo{
   width: 4rem;
   height: 4rem;
@@ -52,7 +46,6 @@ nav{
 }
   &__menu {
     display: none;
-
     @include tab-s {
       font-size: 1.5rem;
       display: flex;
@@ -87,9 +80,7 @@ nav{
     color:#007AFF;
     &__bar{
       border-left: none;
-      
     }
-   
     @include tab-m{
       display: none;
     }

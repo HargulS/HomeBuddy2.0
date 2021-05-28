@@ -67,9 +67,8 @@ export default function SavingsCalculator(props) {
         }
        
         Axios.put(`${API_URL}/api/start/${props.id}`,editData)
-      
         .then((response)=>{alert("Saved! Please click NEXT to proceed")
-
+        
             setGetData("Response",response.editData)})
         
         .catch((error)=>{console.log(error)})

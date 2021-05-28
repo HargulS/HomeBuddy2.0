@@ -8,7 +8,6 @@ export default function Display (props){
       <div>
         <button onClick={onClick}>Summary</button>
         { showResults ? <SummaryPage/> &&<button onClick={closeClick}>Close</button>: null }
-        
       </div>
     )
   }

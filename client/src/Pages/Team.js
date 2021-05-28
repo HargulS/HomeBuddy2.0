@@ -1,7 +1,3 @@
-export default function SignIn(){
-    return(
-        <div>
-         OurTeam
-        </div>
-    );
+export default function SignIn() {
+  return <div>OurTeam</div>;
 }

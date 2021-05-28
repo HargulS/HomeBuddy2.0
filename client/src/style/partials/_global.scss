@@ -1,6 +1,5 @@
 * {
   font-family: TitilliumWeb-Regular;
-
 }
 body,
 html {
@@ -11,94 +10,84 @@ html {
   padding: 0px;
   font-family: TitilliumWeb-Regular;
   font-size: 66.5%;
-  
- 
 }
-h1,h2,h3,h4,h5{
+h1,
+h2,
+h3,
+h4,
+h5 {
   color: black;
   font-weight: bold;
 }
-
 label {
   color: black;
 }
 ul {
   list-style: none;
 }
-a{
+a {
   height: 0px;
-  color:#1e2022;
- 
+  color: #1e2022;
 }
-button{
+button {
   font-weight: 700;
 }
+form h2 {
+  padding-bottom: 10px;
+  font-size: 1.85rem;
+  line-height: 1;
 
-form h2{
-    padding-bottom: 10px;
-    font-size: 1.85rem;
-    line-height: 1;
-  
-   @include tab-m{
-   font-size: 2rem;
-   }
- 
- 
- }
-form label{
+  @include tab-m {
+    font-size: 2rem;
+  }
+}
+form label {
   font-size: 1.5rem;
 }
-label{
+label {
   width: max-content;
   height: 1.5rem;
-  margin-left:2%;
+  margin-left: 2%;
   display: flex;
   align-items: center;
   background-color: #f0f5f9;
 }
-
-
-input{
+input {
   border-radius: 5px;
   box-shadow: 0px 1px 9px -4px #000000;
-  border:#25282d  solid 1px;
+  border: #25282d solid 1px;
   height: 30px;
   background-color: #f0f5f9;
 }
-.particles{
+.particles {
   height: 60vh;
 }
-.result{
+.result {
   color: black;
 }
-.app-container{
+.app-container {
   background-color: $background;
-  
 }
-
-.pageWrapper{
+.pageWrapper {
   position: relative;
 }
-
-.info{
-  color:#007AFF;
+.info {
+  color: #007aff;
   font-weight: 700;
- 
-  &:hover{
+  margin-left: 5px;
+  &:hover {
     cursor: pointer;
-    
   }
 }
-.buttons{
-  color:#1e2022;
+.buttons {
+  color: #1e2022;
   display: flex !important;
   flex-direction: column !important;
   justify-content: space-around;
- 
-  @include tab-s{
+  @include tab-s {
     flex-direction: row !important;
   }
-  &__item{
+  &__item {
     width: 10rem !important;
     height: 2rem;
   }

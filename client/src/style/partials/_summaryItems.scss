@@ -6,7 +6,6 @@
   background-size: cover;
   width: 100%;
   justify-content: center;
-
   &__listContainer {
     line-height: 1.5;
     width: 45%;
@@ -24,10 +23,8 @@
     width: 50%;
     padding-left: 6px;
     line-height: 2;
-
     ul {
       padding-top: 15px;
-
       h5 {
         padding-top: 10px;
       }
@@ -35,6 +32,21 @@
   }
   &__items {
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+    width: 60%;
+    line-height: 1.6;
+  }
+  &__items-docs{
+    width: 100%;
+    align-items: flex-start;
+    
+  }
+  &__iNm-docs{
+    margin-top:-5px;
+    margin-right: 5px;
   }
   &__summaryItems {
     display: flex;
@@ -59,8 +71,6 @@
     padding-left: 12px;
     padding-right: 12px;
     max-width: 500px;
- 
-    
     @include ph-m {
       width: 90vw;
     }
@@ -70,12 +80,10 @@
       padding-left: 24px;
       padding-right: 24px;
       border-radius: 15px;
-   
     }
     @include desktop-sm{
       bottom: -100%;
     }
-
     &:before {
       content: "";
       background-color: #007aff;
@@ -102,13 +110,9 @@
     left: 7px;
     width: 250px;
     margin: 0 auto;
-   
     @include tab-m {
       left: 5px;
-      
     }
-    
-   
   }
   &__clsBtn {
     position: relative;
@@ -117,11 +121,14 @@
     width: 250px;
     margin-left: 9px;
     z-index: 5;
+    @include tab-m{
+      top: -30px; 
+    }
     @include desktop-sm{
       position: relative;
       right: 25%;
-      top: -44px;
-     
+      top: 5px;
+      
     }
   }
 }
