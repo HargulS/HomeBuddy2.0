@@ -126,7 +126,7 @@ export default function DocumentsInterestRates(props) {
     console.log("editDataDocs", editData);
     Axios.patch(`${API_URL}/api/start/${props.id}`, editData)
       .then((response) => {
-        alert("Saved! Please click ok to continue");
+        alert("Saved! Please click OK to continue");
         const data = response.editData;
         console.log("DOCSDATA", data);
       })

@@ -58,7 +58,7 @@ export default function SavingsCalculator(props) {
 
     Axios.put(`${API_URL}/api/start/${props.id}`, editData)
       .then((response) => {
-        alert("Saved! Please click NEXT to proceed");
+        alert("Saved! Please click OK to proceed");
 
         setGetData("Response", response.editData);
       })
@@ -79,7 +79,7 @@ export default function SavingsCalculator(props) {
               src={piggyBank}
             />
           </div>
-          
+
           <label className="savings__formLabel">
             <div className="savings__formLabelDiv">
               <p>Current Balance</p>

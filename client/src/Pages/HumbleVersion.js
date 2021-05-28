@@ -98,7 +98,7 @@ export default function HumbleVersion(props) {
   const postData = (e) => {
     Axios.post(`${API_URL}/api/start`, captureData)
       .then((response) => {
-        alert("Saved! Please click NEXT to proceed");
+        alert("Saved! Please click OK to proceed");
         props.id(response.data.id);
       })
       .catch((error) => {
