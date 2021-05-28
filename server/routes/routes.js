@@ -85,10 +85,10 @@ function updateDocs(id,data){
   const filteredObject = dataArray.filter((item)=>item.id===id);
   filteredObject[0].employment=data.employment
   filteredObject[0].documents=data.documents
- const filteredArray = dataArray.filter((item) => item.id !== id);
-filteredArray.push(filteredObject[0])
+  const filteredArray = dataArray.filter((item) => item.id !== id);
+  filteredArray.push(filteredObject[0])
   fs.writeFileSync(readData, JSON.stringify(filteredArray))
- return filteredObject[0]
+  return filteredObject[0]
 }
 
 router.patch("/:id",(req, res)=>{
