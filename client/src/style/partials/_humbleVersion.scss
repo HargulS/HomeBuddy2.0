@@ -80,8 +80,7 @@
     padding-bottom: 10px;
     padding-top: 24px;
     font-size: 1.85rem;
-    @include tab-s {
-    }
+   
   }
   &__formButtons {
     display: flex;
@@ -112,7 +111,7 @@
       left: 1.8%;
     }
   }
-  &__result--item {
+  &__resultItem {
     line-height: 2;
     padding-left: 24px;
     text-align: left;
@@ -131,4 +130,5 @@
       padding-left: 0;
     }
   }
+ 
 }

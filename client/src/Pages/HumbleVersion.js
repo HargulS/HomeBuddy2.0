@@ -206,7 +206,7 @@ export default function HumbleVersion(props) {
         </label>
         <div className="mtgCalculator__resultWrapper">
           {payment >= 0 ? (
-            <div className="mtgCalculator__result--item">
+            <div className="mtgCalculator__resultItem">
               <p>
                 Mortgage:
                 <i className="result"> ${result}</i>
@@ -217,9 +217,11 @@ export default function HumbleVersion(props) {
               </p>
             </div>
           ) : (
-            <div className="mtgCalculator__result--item">
-              Income to Debt ratio is too high!
+            <div className="mtgCalculator__resultItem">
+             <p className="mtgCalculator__resultItem"> Income to Debt ratio is too high!</p>
             </div>
+            
+            
           )}
         </div>
         <div className="mtgCalculator__formButtons">

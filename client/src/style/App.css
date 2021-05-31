@@ -928,7 +928,7 @@ button:hover {
   }
 }
 
-.mtgCalculator__result--item {
+.mtgCalculator__resultItem {
   line-height: 2;
   padding-left: 24px;
   text-align: left;
@@ -949,14 +949,14 @@ button:hover {
 }
 
 @media (min-width: 768px) {
-  .mtgCalculator__result--item {
+  .mtgCalculator__resultItem {
     line-height: 2;
     padding-left: 32px;
   }
 }
 
 @media (min-width: 950px) {
-  .mtgCalculator__result--item {
+  .mtgCalculator__resultItem {
     padding-left: 0;
   }
 }
