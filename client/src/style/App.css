@@ -9,15 +9,13 @@
 }
 
 nav {
-  width: 95% !important;
-  height: 0;
+  width: 100% !important;
+  background: #c9d6df;
+  background: -webkit-gradient(linear, left top, right top, color-stop(36%, #c9d6df), to(#f0f5f9));
+  background: linear-gradient(90deg, #c9d6df 36%, #f0f5f9 100%);
 }
 
 .navbar {
-  -webkit-transform: translate(2.5%, 0px);
-          transform: translate(2.5%, 0px);
-  background: -webkit-gradient(linear, left top, right top, color-stop(36%, #c9d6df), to(#f0f5f9));
-  background: linear-gradient(90deg, #c9d6df 36%, #f0f5f9 100%);
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,7 +26,7 @@ nav {
   font-weight: bold;
   position: relative;
   z-index: 9;
-  max-width: 1920px;
+  max-width: 2500px;
   height: 5rem;
 }
 
@@ -100,7 +98,7 @@ nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 40%;
+    width: 45%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -181,13 +179,13 @@ nav {
 
 @media (min-width: 768px) {
   .homepage {
-    height: 3380px;
+    height: 3350px;
   }
 }
 
 @media (min-width: 950px) {
   .homepage {
-    height: 1788px;
+    height: 1688px;
   }
 }
 
@@ -212,7 +210,7 @@ nav {
 
 @media (min-width: 768px) {
   .homepage__heroBanner {
-    height: 1000px;
+    height: 600px;
     max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;

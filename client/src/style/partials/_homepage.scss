@@ -4,10 +4,10 @@
   align-items: center;
   height: 3100px;
   @include tab-s {
-    height: 3380px;
+    height: 3350px;
   }
   @include tab-m {
-    height: 1788px;
+    height: 1688px;
   }
   &__heroBanner {
     background: linear-gradient(rgba(201, 214, 223, 0), rgba(82, 97, 107, 0.95)),
@@ -23,7 +23,7 @@
     text-align: center;
     position: relative;
     @include tab-s {
-      height: 1000px;
+      height: 600px;
       max-width: 100%;
       display: flex;
       flex-direction: column;
