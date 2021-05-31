@@ -1,16 +1,21 @@
 nav{
-  width: 100% !important;
-  background: rgb(201,214,223);
-  background: linear-gradient(90deg, rgba(201,214,223,1) 36%, rgba(240,245,249,1) 100%);
+  width: 95% !important;
+  height: 0;
+   
+
+  
+  
 }
 .navbar {
+  transform: translate(2.5%, 0px);
+  background: linear-gradient(90deg, rgba(201,214,223,1) 36%, rgba(240,245,249,1) 100%);
   margin: 0 auto;
   display: flex;
   justify-content: center;
   font-weight: bold;
   position: relative;
   z-index: 9;
-  max-width:$desktop-xl-breakpoint;
+  max-width:1920px;
   height: 5rem;
   @include tab-s {
     justify-content: space-between;
@@ -81,7 +86,7 @@ nav{
     &__bar{
       border-left: none;
     }
-    @include tab-m{
+    @include tab-s{
       display: none;
     }
   }

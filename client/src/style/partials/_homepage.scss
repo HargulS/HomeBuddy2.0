@@ -23,7 +23,7 @@
     text-align: center;
     position: relative;
     @include tab-s {
-      height: 80vh;
+      height: 1000px;
       max-width: 100%;
       display: flex;
       flex-direction: column;
@@ -61,7 +61,7 @@
     width: 95%;
     margin: 0 auto;
     position: relative;
-    top: -1.7%;
+    top: -1.65%;
     border-radius: 10px;
     border: solid 0.5px #52616b;
     -webkit-box-shadow: 0px 10px 13px -7px #000000,
@@ -73,10 +73,10 @@
     max-width: 1920px;
     z-index: 0;
     @include tab-s {
-      top: -1.6%;
+      top: -1.54%;
     }
     @include tab-m {
-      top: -3.1%;
+      top: -2.8%;
       flex-direction: column;
       justify-content: space-between;
       height: 1080px;
