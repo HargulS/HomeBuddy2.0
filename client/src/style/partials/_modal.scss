@@ -5,10 +5,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #007aff;
-  width: 60vw;
+  // width: 60vw;
+  max-width: 1920px;
   border-radius: 4px;
   line-height: 2;
-  border: solid black .5px;
+  border: solid black 0.5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,20 +17,49 @@
   z-index: 2;
   font-family: TitilliumWeb-SemiBold;
   text-align: left;
-  &:after{
+  &:after {
     position: absolute;
     left: -50%;
     content: "";
-    background-color:#c9d6df;
+    background-color: #c9d6df;
     position: absolute;
     width: 200%;
     height: 500vw;
-    opacity:.8;
+    opacity: 0.8;
     z-index: -1;
-    @include tab-s{
+    @include tab-s {
       height: 200vw;
     }
   }
+  &__contents {
+    overflow-y: scroll;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    padding-right: -50px;
+    max-height: 800px;
+  }
+  &__NOA{
+    height: 95vh;
+    max-height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  &__YTD {
+    height: 60vh;
+    max-height: 325px;
+  }
+  &__cashFlow {
+    height: 60vh;
+    max-height: 350px;
+  }
+  &__T1Gen {
+    height: 60vh;
+    max-height: 400px;
+  }
+ 
   &__link {
     color: black;
     font-weight: bold;
@@ -40,15 +70,19 @@
     display: flex;
     margin: 0 auto;
     width: 90%;
-    max-width:550px;
+    max-width: 550px;
     object-fit: contain;
   }
-&__button{
-  max-width: 300px;
-  width: 20vw;
-  margin: 0 auto;
-  margin-top: 16px;
-}
+
+  &__buttonDiv {
+    display: flex;
+    justify-content: center;
+  }
+  &__button {
+    width: 10vw;
+    min-width: 100px;
+    max-width: 265px;
+  }
 }
 .modal p {
   line-height: 32px;

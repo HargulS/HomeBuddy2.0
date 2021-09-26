@@ -17,6 +17,7 @@ export default function SummaryItems(props) {
   return (
     <section className="summary__summaryItems">
       <ul className="summary__list">
+        <div className="summary__div">
         <h2 className="summary__heading">Session Summary</h2>
         <li className="summary__items">
           <h3 className="summary__iNm">Name:</h3>
@@ -71,6 +72,7 @@ export default function SummaryItems(props) {
         <li className="summary__items summary__items-docs">
           <h3 className="summary__iNm summary__iNm-docs">Documents:</h3> {documents}{" "}
         </li>
+        </div>
       </ul>
     </section>
   );

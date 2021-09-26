@@ -19,7 +19,6 @@
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: 40vh;
     text-align: center;
     position: relative;
     @include tab-s {
@@ -38,10 +37,9 @@
     align-items: center;
     width: 300px;
     margin-bottom: -70px;
+    
     @include tab-s {
       width: 765px;
-      height: 60vh;
-      justify-content: space-around;
     }
     @include desktop-lg {
       margin-bottom: 0 auto;

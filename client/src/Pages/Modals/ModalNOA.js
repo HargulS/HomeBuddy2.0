@@ -4,6 +4,8 @@ export default function ModalNOA({open, children, onClose}){
 if(!open) return null
 return(
     <div className="modal">
+        <div className="modal__contents">
+            <div className="modal__NOA">
         <p>
         Your notice of assessment (NOA) is an evaluation of your tax return that the Canada Revenue Agency sends you every year after you file your tax return. 
         You can access your NOA online from Canada Revenue Agency(CRA).
@@ -11,7 +13,11 @@ return(
         </p>
         <img alt="what NOA looks like" className="modal__pic"src={SampleNOA}/>
     {children}
-    <button className="modal__button" onClick={onClose}>Close</button>
+    <div className="modal__buttonDiv">
+            <button className="modal__button" onClick={onClose}>Close</button>
+            </div>
+    </div>
+    </div>
     </div>
 )
 }

@@ -1,4 +1,5 @@
 .swiperHeading {
+ 
   @include tab-s {
     margin-bottom: 125px;
   }
@@ -20,6 +21,7 @@
     width: 50vw;
     position: relative;
     top: -22%;
+   
   }
   @include desktop-m {
     margin-left: 0 !important;
@@ -33,6 +35,7 @@
   }
 }
 .swiper-slide {
+
   @include tab-s {
   }
 }
@@ -76,6 +79,7 @@
   opacity: 1 !important;
   position: relative;
   top: -60%;
+  
   @include tab-s {
     top: 120%;
     font-size: 5.5rem !important;

@@ -203,7 +203,6 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100vw;
-  height: 40vh;
   text-align: center;
   position: relative;
 }
@@ -243,9 +242,6 @@ nav {
 @media (min-width: 768px) {
   .homepage__swiper {
     width: 765px;
-    height: 60vh;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
   }
 }
 
@@ -1650,10 +1646,10 @@ input {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: #007aff;
-  width: 60vw;
+  max-width: 1920px;
   border-radius: 4px;
   line-height: 2;
-  border: solid black .5px;
+  border: solid black 0.5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1678,7 +1674,7 @@ input {
   position: absolute;
   width: 200%;
   height: 500vw;
-  opacity: .8;
+  opacity: 0.8;
   z-index: -1;
 }
 
@@ -1686,6 +1682,49 @@ input {
   .modal:after {
     height: 200vw;
   }
+}
+
+.modal__contents {
+  overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: -50px;
+  max-height: 800px;
+}
+
+.modal__NOA {
+  height: 95vh;
+  max-height: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.modal__YTD {
+  height: 60vh;
+  max-height: 325px;
+}
+
+.modal__cashFlow {
+  height: 60vh;
+  max-height: 350px;
+}
+
+.modal__T1Gen {
+  height: 60vh;
+  max-height: 400px;
 }
 
 .modal__link {
@@ -1707,11 +1746,19 @@ input {
      object-fit: contain;
 }
 
+.modal__buttonDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .modal__button {
-  max-width: 300px;
-  width: 20vw;
-  margin: 0 auto;
-  margin-top: 16px;
+  width: 10vw;
+  min-width: 100px;
+  max-width: 265px;
 }
 
 .modal p {
@@ -1972,8 +2019,10 @@ input {
   margin-left: 15px;
   position: absolute;
   bottom: 30%;
-  height: 1200px;
+  height: 135vh;
+  max-height: 1250px;
   width: 30rem;
+  border: 2px solid blue;
   padding-left: 12px;
   padding-right: 12px;
   max-width: 500px;
@@ -2022,6 +2071,11 @@ input {
     bottom: -0.5%;
     left: -1000%;
   }
+}
+
+.summary__div {
+  height: 90%;
+  overflow-y: scroll;
 }
 
 .summary__shwBtn {

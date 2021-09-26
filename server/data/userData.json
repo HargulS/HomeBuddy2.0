@@ -1,17 +1,1 @@
-[
-  {
-    "id": "95068b53-082d-490b-aba6-de54c47b9c71",
-    "name": null,
-    "age": null,
-    "location": null,
-    "income": null,
-    "liabilities": null,
-    "mortgage": null,
-    "mortgageInstallment": null,
-    "savings": 456,
-    "contributions": 3,
-    "interest": 3333,
-    "years": 3,
-    "futureValue": "2572392904522.87"
-  }
-]
+[{"id":"95068b53-082d-490b-aba6-de54c47b9c71","name":null,"age":null,"location":null,"income":null,"liabilities":null,"mortgage":null,"mortgageInstallment":null,"savings":456,"contributions":3,"interest":3333,"years":3,"futureValue":"2572392904522.87"},{"id":"37d2f99d-68e5-4a29-ac08-2cf60513c237","name":"Hargul","age":55,"location":"vancouver","income":5000000,"liabilities":5000,"mortgage":"20468928.91","mortgageInstallment":"117168.33","savings":20000,"contributions":2000,"interest":5,"years":10,"futureValue":"334447.31","employment":"SELF-EMPLOYED","documents":"1).Two years most recent Notice of Assessment 2). Complete T1 General of last 2 tax years 3). Accountant prepared Cash Flow Statements 4). Articles of Incorporation(needed only if the business is incorporated)"},{"id":"cef5ba50-5c7f-4ba4-ace6-9fff545e7e17","name":"ewr","age":44,"location":"vavsd","income":444444444,"liabilities":44439,"mortgage":"2837516637.73","mortgageInstallment":"16242525.28","savings":4444,"contributions":44444,"interest":4444,"years":44,"futureValue":"Infinity","employment":"SALARIED","documents":"1). Annual Income Documents( to confirm consistency of income) Two years most recentNotice of Assessment or Year end paystubs of previous two years mentioningYear To Date(YTD)amount 2). Current Income(To confirm your employment status)  Three-four most recent paychecks or Direct Deposit history of last 2-3 months or Letter Of Employment(no older than 90 days is preferable)"}]
